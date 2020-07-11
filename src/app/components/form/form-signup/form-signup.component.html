@@ -1,6 +1,10 @@
 <div fxLayout="column" fxLayoutAlign="center center">
   <form class="example-form">
     <mat-form-field class="example-full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Ex. Patrícia Maria" value="" />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
       <input matInput placeholder="Ex. pat@example.com" value="" />
     </mat-form-field>
@@ -9,5 +13,7 @@
       <input matInput type="password" placeholder="*******" value="" />
     </mat-form-field>
   </form>
-  <button mat-stroked-button color="primary">Entrar</button>
+  <button mat-raised-button color="primary">
+    Registre-se
+  </button>
 </div>
