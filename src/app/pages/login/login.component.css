@@ -1,0 +1,15 @@
+#main {
+  height: 100%;
+}
+
+#image {
+  width: 50%;
+}
+.example-form {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
