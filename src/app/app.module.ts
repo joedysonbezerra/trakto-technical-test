@@ -11,9 +11,10 @@ import { FormModule } from "./components/form/form.module";
 import { MatIconModule } from "@angular/material/icon";
 import { AngularFireModule } from "@angular/fire";
 import { environment } from "../environments/environment";
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, DashboardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
