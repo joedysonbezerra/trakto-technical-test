@@ -23,7 +23,7 @@ export class FormSigninComponent implements OnInit {
     const {
       value: { email, password },
     } = this.form;
-    console.log(`Email:${email} Password:${password}`);
+
     this.authService.signIn(email, password);
   }
 }
