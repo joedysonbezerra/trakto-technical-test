@@ -8,6 +8,7 @@ import { LoginComponent } from "./pages/login/login.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatTabsModule } from "@angular/material/tabs";
 import { FormModule } from "./components/form/form.module";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [AppComponent, LoginComponent],
@@ -18,6 +19,7 @@ import { FormModule } from "./components/form/form.module";
     FlexLayoutModule,
     MatTabsModule,
     FormModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
