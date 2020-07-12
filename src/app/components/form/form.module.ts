@@ -8,6 +8,7 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
 import { AngularFireAuthModule } from "@angular/fire/auth";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [FormSigninComponent, FormSignupComponent],
@@ -19,6 +20,7 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
     ReactiveFormsModule,
     MatIconModule,
     AngularFireAuthModule,
+    MatSnackBarModule,
   ],
   exports: [FormSigninComponent, FormSignupComponent],
 })

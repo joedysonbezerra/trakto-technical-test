@@ -21,11 +21,31 @@ export class AuthService {
         this.router.navigate(["/dashboard"]);
       })
       .catch(() => {
-        this.snackBar.open("Email ou Password incorreto !", "", {
-          duration: 3000,
-          horizontalPosition: "center",
-          verticalPosition: "top",
-        });
+        this.alert("Email ou Password incorreto !");
       });
+  }
+  signUp(email: string, password: string, name: string) {
+    this.auth
+      .createUserWithEmailAndPassword(email, password)
+      .then(({ user }) => {
+        localStorage["token"] = user.refreshToken;
+        this.router.navigate(["/dashboard"]);
+      })
+      .catch((error) => {
+        console.log(error);
+        if (error.code === "auth/email-already-in-use")
+          this.alert("Email já está sendo utilizado !");
+
+        if (error.code === "auth/weak-password")
+          this.alert("A senha deve ter pelo menos 6 caracteres !");
+      });
+  }
+
+  private alert(msg: string) {
+    this.snackBar.open(msg, "", {
+      duration: 5000,
+      horizontalPosition: "center",
+      verticalPosition: "top",
+    });
   }
 }

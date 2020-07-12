@@ -12,7 +12,6 @@ import { MatIconModule } from "@angular/material/icon";
 import { AngularFireModule } from "@angular/fire";
 import { environment } from "../environments/environment";
 import { DashboardComponent } from "./pages/dashboard/dashboard.component";
-import { MatSnackBarModule } from "@angular/material/snack-bar";
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, DashboardComponent],
@@ -25,7 +24,6 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     FormModule,
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase),
-    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
