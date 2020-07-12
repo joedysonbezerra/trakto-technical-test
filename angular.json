@@ -103,6 +103,10 @@
           "options": {
             "browserTarget": "trakto-technical-test:build"
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

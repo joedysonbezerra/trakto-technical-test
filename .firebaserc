@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "trakto-e277f": {
+      "hosting": {
+        "trakto-technical-test": [
+          "trakto-e277f"
+        ]
+      }
+    }
+  }
+}

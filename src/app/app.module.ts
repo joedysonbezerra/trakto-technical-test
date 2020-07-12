@@ -9,6 +9,8 @@ import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatTabsModule } from "@angular/material/tabs";
 import { FormModule } from "./components/form/form.module";
 import { MatIconModule } from "@angular/material/icon";
+import { AngularFireModule } from "@angular/fire";
+import { environment } from "../environments/environment";
 
 @NgModule({
   declarations: [AppComponent, LoginComponent],
@@ -20,6 +22,7 @@ import { MatIconModule } from "@angular/material/icon";
     MatTabsModule,
     FormModule,
     MatIconModule,
+    AngularFireModule.initializeApp(environment.firebase),
   ],
   providers: [],
   bootstrap: [AppComponent],
