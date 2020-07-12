@@ -4,7 +4,7 @@ import { FormGroup, FormControl } from "@angular/forms";
 @Component({
   selector: "app-form-signin",
   templateUrl: "./form-signin.component.html",
-  styleUrls: ["./form-signin.component.css"],
+  styleUrls: ["./form-signin.component.css", "../form.module.css"],
 })
 export class FormSigninComponent implements OnInit {
   form: FormGroup;

@@ -4,7 +4,7 @@ import { FormGroup, FormControl } from "@angular/forms";
 @Component({
   selector: "app-form-signup",
   templateUrl: "./form-signup.component.html",
-  styleUrls: ["./form-signup.component.css"],
+  styleUrls: ["./form-signup.component.css", "../form.module.css"],
 })
 export class FormSignupComponent implements OnInit {
   form: FormGroup;
