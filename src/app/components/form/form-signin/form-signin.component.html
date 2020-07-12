@@ -1,13 +1,28 @@
-<div fxLayout="column" fxLayoutAlign="center center">
-  <form class="example-form">
-    <mat-form-field class="example-full-width">
+<form class="example-form" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Email</mat-label>
-      <input matInput placeholder="Ex. pat@example.com" value="" />
+      <input
+        matInput
+        formControlName="email"
+        placeholder="Ex. pat@example.com"
+        value=""
+        required
+      />
+      <mat-icon matSuffix>alternate_email</mat-icon>
     </mat-form-field>
-    <mat-form-field class="example-full-width">
+    <mat-form-field class="example-full-width" appearance="fill">
       <mat-label>Password</mat-label>
-      <input matInput type="password" placeholder="*******" value="" />
+      <input
+        matInput
+        formControlName="password"
+        type="password"
+        placeholder="*******"
+        value=""
+        required
+      />
+      <mat-icon matSuffix>lock</mat-icon>
     </mat-form-field>
-  </form>
-  <button mat-stroked-button color="primary">Entrar</button>
-</div>
+    <button mat-stroked-button color="primary">Entrar</button>
+  </div>
+</form>
