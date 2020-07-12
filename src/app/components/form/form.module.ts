@@ -7,6 +7,7 @@ import { FormSignupComponent } from "./form-signup/form-signup.component";
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
+import { AngularFireAuthModule } from "@angular/fire/auth";
 
 @NgModule({
   declarations: [FormSigninComponent, FormSignupComponent],
@@ -17,6 +18,7 @@ import { MatIconModule } from "@angular/material/icon";
     FlexLayoutModule,
     ReactiveFormsModule,
     MatIconModule,
+    AngularFireAuthModule,
   ],
   exports: [FormSigninComponent, FormSignupComponent],
 })
