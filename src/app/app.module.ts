@@ -15,10 +15,11 @@ import { AngularFireModule } from '@angular/fire'
 import { environment } from '../environments/environment'
 
 import { AuthGuardService } from './shared/auth.guard.service';
-import { ClassComponent } from './pages/class/class.component'
+import { ClassComponent } from './pages/class/class.component';
+import { TeacherComponent } from './pages/teacher/teacher.component'
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ClassComponent],
+  declarations: [AppComponent, LoginComponent, ClassComponent, TeacherComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
