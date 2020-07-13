@@ -8,26 +8,16 @@ import { LoginComponent } from './pages/login/login.component'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatTabsModule } from '@angular/material/tabs'
 import { FormModule } from './components/form/form.module'
+import { ShellModule } from './components/shell/shell.module'
+
 import { MatIconModule } from '@angular/material/icon'
 import { AngularFireModule } from '@angular/fire'
 import { environment } from '../environments/environment'
 import { DashboardComponent } from './pages/dashboard/dashboard.component'
 import { AuthGuardService } from './shared/auth.guard.service'
-import { HeaderComponent } from './components/header/header.component'
-import { MatToolbarModule } from '@angular/material/toolbar'
-import { SidenavComponent } from './components/sidenav/sidenav.component'
-import { MatSidenavModule } from '@angular/material/sidenav'
-import { MatListModule } from '@angular/material/list';
-import { FooterComponent } from './components/footer/footer.component'
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    DashboardComponent,
-    HeaderComponent,
-    SidenavComponent,
-    FooterComponent
-  ],
+  declarations: [AppComponent, LoginComponent, DashboardComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -37,9 +27,7 @@ import { FooterComponent } from './components/footer/footer.component'
     FormModule,
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase),
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule
+    ShellModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]
