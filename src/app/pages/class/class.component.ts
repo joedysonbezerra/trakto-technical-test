@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-class',
@@ -6,10 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./class.component.css']
 })
 export class ClassComponent implements OnInit {
+  constructor () {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit (): void {}
 }

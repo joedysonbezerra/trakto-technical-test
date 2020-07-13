@@ -8,19 +8,28 @@ import { LoginComponent } from './pages/login/login.component'
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { MatTabsModule } from '@angular/material/tabs'
 import { FormModule } from './components/form/form.module'
+import { TableModule } from './components/table/table.module'
+
 import { ShellModule } from './components/shell/shell.module'
 
 import { MatIconModule } from '@angular/material/icon'
 import { AngularFireModule } from '@angular/fire'
 import { environment } from '../environments/environment'
 
-import { AuthGuardService } from './shared/auth.guard.service';
-import { ClassComponent } from './pages/class/class.component';
-import { TeacherComponent } from './pages/teacher/teacher.component';
+import { AuthGuardService } from './shared/auth.guard.service'
+import { ClassComponent } from './pages/class/class.component'
+import { TeacherComponent } from './pages/teacher/teacher.component'
 import { StudentComponent } from './pages/student/student.component'
+import { MatCardModule } from '@angular/material/card'
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ClassComponent, TeacherComponent, StudentComponent],
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    ClassComponent,
+    TeacherComponent,
+    StudentComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -30,7 +39,9 @@ import { StudentComponent } from './pages/student/student.component'
     FormModule,
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase),
-    ShellModule
+    ShellModule,
+    TableModule,
+    MatCardModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]
