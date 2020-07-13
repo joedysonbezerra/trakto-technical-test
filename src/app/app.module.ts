@@ -21,6 +21,7 @@ import { ClassComponent } from './pages/class/class.component'
 import { TeacherComponent } from './pages/teacher/teacher.component'
 import { StudentComponent } from './pages/student/student.component'
 import { MatCardModule } from '@angular/material/card'
+import { MatButtonModule } from '@angular/material/button'
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { MatCardModule } from '@angular/material/card'
     AngularFireModule.initializeApp(environment.firebase),
     ShellModule,
     TableModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]
