@@ -1,17 +1,25 @@
 <mat-sidenav-container>
   <mat-sidenav mode="side" opened fixedInViewport="true" fixedTopGap="64">
     <mat-nav-list>
-      <a mat-list-item class="mat-elevation-z2">
+      <a mat-list-item class="mat-elevation-z2" routerLink="/dashboard/classes">
         <mat-icon aria-hidden="false">group</mat-icon>
 
         Turmas
       </a>
-      <a mat-list-item class="mat-elevation-z2">
+      <a
+        mat-list-item
+        class="mat-elevation-z2"
+        routerLink="/dashboard/students"
+      >
         <mat-icon aria-hidden="false">face</mat-icon>
 
         Alunos
       </a>
-      <a mat-list-item class="mat-elevation-z2">
+      <a
+        mat-list-item
+        class="mat-elevation-z2"
+        routerLink="/dashboard/teachers"
+      >
         <mat-icon aria-hidden="false">school</mat-icon>
 
         Professores
@@ -19,6 +27,6 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content class="content">
-    <h1>Inicio</h1>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

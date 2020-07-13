@@ -9,6 +9,7 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatListModule } from '@angular/material/list'
 import { MatIconModule } from '@angular/material/icon'
 import { MatMenuModule } from '@angular/material/menu'
+import { AppRoutingModule } from '../../app-routing.module'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MatMenuModule } from '@angular/material/menu'
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    AppRoutingModule
   ],
   exports: [HeaderComponent, SidenavComponent, FooterComponent, ShellComponent]
 })
