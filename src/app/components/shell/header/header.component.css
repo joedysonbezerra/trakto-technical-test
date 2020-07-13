@@ -1,4 +1,4 @@
-#logo {
+.logo {
   font-size: 2.5em;
   margin-top: -1.5rem;
   margin-right: 3rem;
@@ -14,6 +14,6 @@
   font-weight: 400;
 }
 
-#mat-icon-drop {
+.mat-icon-drop {
   vertical-align: middle;
 }

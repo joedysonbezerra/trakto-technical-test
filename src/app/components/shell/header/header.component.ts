@@ -7,10 +7,12 @@ import { AuthService } from '../../../services/auth.service'
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  teacher: string = history.state.data.name
+  teacher: string
   constructor (private authService: AuthService) {}
 
-  ngOnInit (): void {}
+  ngOnInit (): void {
+    this.teacher = this.authService.getUserName()
+  }
   logout () {
     this.authService.logout()
   }

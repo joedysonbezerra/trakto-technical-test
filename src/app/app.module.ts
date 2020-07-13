@@ -13,11 +13,11 @@ import { ShellModule } from './components/shell/shell.module'
 import { MatIconModule } from '@angular/material/icon'
 import { AngularFireModule } from '@angular/fire'
 import { environment } from '../environments/environment'
-import { DashboardComponent } from './pages/dashboard/dashboard.component'
+
 import { AuthGuardService } from './shared/auth.guard.service'
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, DashboardComponent],
+  declarations: [AppComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
