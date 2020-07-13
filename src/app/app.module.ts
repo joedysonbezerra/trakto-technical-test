@@ -1,27 +1,27 @@
-import { BrowserModule } from '@angular/platform-browser'
-import { NgModule } from '@angular/core'
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module'
-import { AppComponent } from './app.component'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import { LoginComponent } from './pages/login/login.component'
-import { FlexLayoutModule } from '@angular/flex-layout'
-import { MatTabsModule } from '@angular/material/tabs'
-import { FormModule } from './components/form/form.module'
-import { TableModule } from './components/table/table.module'
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { LoginComponent } from "./pages/login/login.component";
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatTabsModule } from "@angular/material/tabs";
+import { FormModule } from "./components/forms/form.module";
+import { TableModule } from "./components/tables/table.module";
 
-import { ShellModule } from './components/shell/shell.module'
+import { ShellModule } from "./components/shell/shell.module";
 
-import { MatIconModule } from '@angular/material/icon'
-import { AngularFireModule } from '@angular/fire'
-import { environment } from '../environments/environment'
+import { MatIconModule } from "@angular/material/icon";
+import { AngularFireModule } from "@angular/fire";
+import { environment } from "../environments/environment";
 
-import { AuthGuardService } from './shared/auth.guard.service'
-import { ClassComponent } from './pages/class/class.component'
-import { TeacherComponent } from './pages/teacher/teacher.component'
-import { StudentComponent } from './pages/student/student.component'
-import { MatCardModule } from '@angular/material/card'
-import { MatButtonModule } from '@angular/material/button'
+import { AuthGuardService } from "./shared/auth.guard.service";
+import { ClassComponent } from "./pages/class/class.component";
+import { TeacherComponent } from "./pages/teacher/teacher.component";
+import { StudentComponent } from "./pages/student/student.component";
+import { MatCardModule } from "@angular/material/card";
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -29,7 +29,7 @@ import { MatButtonModule } from '@angular/material/button'
     LoginComponent,
     ClassComponent,
     TeacherComponent,
-    StudentComponent
+    StudentComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,9 +43,9 @@ import { MatButtonModule } from '@angular/material/button'
     ShellModule,
     TableModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
   ],
   providers: [AuthGuardService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
