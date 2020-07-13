@@ -7,18 +7,26 @@ import { MatSnackBar } from '@angular/material/snack-bar'
   providedIn: 'root'
 })
 export class AuthService {
+  private userId: string
   constructor (
     public auth: AngularFireAuth,
     public router: Router,
     private snackBar: MatSnackBar
   ) {}
 
+  getUserId (): string {
+    return this.userId
+  }
+
   signIn (email: string, password: string) {
     this.auth
       .signInWithEmailAndPassword(email, password)
       .then(({ user }) => {
         localStorage['token'] = user.refreshToken
-        this.router.navigate(['/dashboard'])
+        this.userId = user.uid
+        this.router.navigate(['/dashboard'], {
+          state: { data: { name: user.displayName } }
+        })
       })
       .catch(() => {
         this.alert('Email ou Password incorreto !')
@@ -28,8 +36,14 @@ export class AuthService {
     this.auth
       .createUserWithEmailAndPassword(email, password)
       .then(({ user }) => {
+        user.updateProfile({
+          displayName: name
+        })
         localStorage['token'] = user.refreshToken
-        this.router.navigate(['/dashboard'])
+        this.userId = user.uid
+        this.router.navigate(['/dashboard'], {
+          state: { data: { name } }
+        })
       })
       .catch(error => {
         console.log(error)
