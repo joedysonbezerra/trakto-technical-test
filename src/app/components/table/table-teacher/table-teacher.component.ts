@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core'
   styleUrls: ['./table-teacher.component.css', '../table.module.css']
 })
 export class TableTeacherComponent implements OnInit {
-  displayedColumns = ['id', 'name', 'classes']
+  displayedColumns = ['id', 'name', 'classes', 'action']
   constructor () {}
 
   ngOnInit (): void {}
