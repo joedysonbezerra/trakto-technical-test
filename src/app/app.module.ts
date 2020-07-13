@@ -16,10 +16,11 @@ import { environment } from '../environments/environment'
 
 import { AuthGuardService } from './shared/auth.guard.service';
 import { ClassComponent } from './pages/class/class.component';
-import { TeacherComponent } from './pages/teacher/teacher.component'
+import { TeacherComponent } from './pages/teacher/teacher.component';
+import { StudentComponent } from './pages/student/student.component'
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, ClassComponent, TeacherComponent],
+  declarations: [AppComponent, LoginComponent, ClassComponent, TeacherComponent, StudentComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
