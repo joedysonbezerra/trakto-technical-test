@@ -1,0 +1,16 @@
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer p {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  font-size: 0.96rem;
+  font-weight: 300;
+}
+.mat-icon {
+  font-size: 1.4rem;
+  color: #ff6461;
+}

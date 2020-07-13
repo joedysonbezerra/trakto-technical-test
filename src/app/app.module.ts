@@ -17,14 +17,16 @@ import { HeaderComponent } from './components/header/header.component'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { SidenavComponent } from './components/sidenav/sidenav.component'
 import { MatSidenavModule } from '@angular/material/sidenav'
-import { MatListModule } from '@angular/material/list'
+import { MatListModule } from '@angular/material/list';
+import { FooterComponent } from './components/footer/footer.component'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
     HeaderComponent,
-    SidenavComponent
+    SidenavComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
