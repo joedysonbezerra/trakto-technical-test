@@ -14,10 +14,11 @@ import { MatIconModule } from '@angular/material/icon'
 import { AngularFireModule } from '@angular/fire'
 import { environment } from '../environments/environment'
 
-import { AuthGuardService } from './shared/auth.guard.service'
+import { AuthGuardService } from './shared/auth.guard.service';
+import { ClassComponent } from './pages/class/class.component'
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, ClassComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
