@@ -1,4 +1,11 @@
 .mat-list-item {
+  background-color: #3f51b5;
+  color: #fff;
+}
+.mat-list-item:nth-child(n + 1) {
+  margin-top: 1rem;
+}
+.mat-list-item:hover {
   color: #3f51b5;
 }
 .mat-icon {
