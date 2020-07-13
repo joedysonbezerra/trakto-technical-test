@@ -15,13 +15,16 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component'
 import { AuthGuardService } from './shared/auth.guard.service'
 import { HeaderComponent } from './components/header/header.component'
 import { MatToolbarModule } from '@angular/material/toolbar'
-
+import { SidenavComponent } from './components/sidenav/sidenav.component'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatListModule } from '@angular/material/list'
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +35,9 @@ import { MatToolbarModule } from '@angular/material/toolbar'
     FormModule,
     MatIconModule,
     AngularFireModule.initializeApp(environment.firebase),
-    MatToolbarModule
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [AuthGuardService],
   bootstrap: [AppComponent]
