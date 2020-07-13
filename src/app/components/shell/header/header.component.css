@@ -1,6 +1,19 @@
-.mat-icon {
+#logo {
   font-size: 2.5em;
   margin-top: -1.5rem;
   margin-right: 3rem;
   margin-left: 1rem;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-button-wrapper {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+#mat-icon-drop {
+  vertical-align: middle;
 }
