@@ -11,8 +11,8 @@ import { AngularFireAuthModule } from "@angular/fire/auth";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
 import { FormCreateClassComponent } from "./form-create-class/form-create-class.component";
 import { MatSelectModule } from "@angular/material/select";
-import { FormCreateStudentComponent } from './form-create-student/form-create-student.component';
-import { FormCreateTeacherComponent } from './form-create-teacher/form-create-teacher.component';
+import { FormCreateStudentComponent } from "./form-create-student/form-create-student.component";
+import { FormCreateTeacherComponent } from "./form-create-teacher/form-create-teacher.component";
 
 @NgModule({
   declarations: [
@@ -33,6 +33,12 @@ import { FormCreateTeacherComponent } from './form-create-teacher/form-create-te
     MatSnackBarModule,
     MatSelectModule,
   ],
-  exports: [FormSigninComponent, FormSignupComponent, FormCreateClassComponent],
+  exports: [
+    FormSigninComponent,
+    FormSignupComponent,
+    FormCreateClassComponent,
+    FormCreateStudentComponent,
+    FormCreateTeacherComponent,
+  ],
 })
 export class FormModule {}
