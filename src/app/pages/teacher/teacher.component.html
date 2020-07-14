@@ -1,3 +1,5 @@
 <mat-card class="mat-elevation-z4"> <h1>Professores</h1></mat-card>
-<button mat-raised-button color="primary">Novo Professor</button>
+<button mat-raised-button color="primary" (click)="openDialog()">
+  Novo Professor
+</button>
 <app-table-teacher></app-table-teacher>

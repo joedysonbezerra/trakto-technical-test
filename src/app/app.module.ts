@@ -24,6 +24,8 @@ import { ClassComponent } from "./pages/class/class.component";
 import { TeacherComponent } from "./pages/teacher/teacher.component";
 import { StudentComponent } from "./pages/student/student.component";
 import { DialogClass } from "./pages/class/dialog-class/dialog-class.component";
+import { DialogStudent } from "./pages/student/dialog-student/dialog-student.component";
+import { DialogTeacher } from "./pages/teacher/dialog-teacher/dialog-teacher.component";
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { DialogClass } from "./pages/class/dialog-class/dialog-class.component";
     TeacherComponent,
     StudentComponent,
     DialogClass,
+    DialogStudent,
+    DialogTeacher,
   ],
   imports: [
     BrowserModule,
