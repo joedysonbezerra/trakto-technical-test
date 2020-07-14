@@ -1,27 +1,57 @@
-# TraktoTechnicalTest
+  <p align="center">
+<img align="center" alt="Trakto" src="https://www.trakto.io/wp-content/uploads/2019/11/logotipo1.png" />
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.2.
 
-## Development server
+Imagine que você trabalha em uma software house que foi contratada para desenvolver um sistema para uma creche escolar.
+Nesta creche você foi escalado como fullstack para o projeto para resolver um problema da empresa quanto a organização de alunos em sala de aulas.
+Seguem abaixo as definições levantadas junto com os analistas:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1. O sistema deve ser feito usando o framework Angular 7+;
+2. Realizar login com Firebase Authentication;
+3. Realizar persistência dos registros utilizando o Firebase Firestore;
+4. Disponibilizar o código em um repositório aberto no Github;
+5. O sistema deve contar com uma tela de login e registro onde os usuários são professores que irão informar o e-mail e senha;
+6. Implementar testes unitários para as features propostas;
 
-## Code scaffolding
+## 🚀 Como Iniciar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Antes de Iniciar, devemos instalar as dependências então rode o comando:
+```
+$ npm install
+```
 
-## Build
+Antes de Iniciar, devemos preencher as credenciais do firebase no arquivo environment.ts:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+  firebase: {
+    apiKey: "<your-key>",
+    authDomain: "<your-project-authdomain>",
+    databaseURL: "<your-database-URL>",
+    projectId: "<your-project-id>",
+    storageBucket: "<your-storage-bucket>",
+    messagingSenderId: "<your-messaging-sender-id>",
+  },
+  ```
+Para iniciar o sistema em desenvolvimento, rode o comando:
 
-## Running unit tests
+```
+$ npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## :wrench: Tecnologias utilizadas
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+-  [Angular](https://angular.io/)
+-  [Angular Fire](https://github.com/angular/angularfire)
+-  [Angular Material](https://material.angular.io/)
+-  [Angular flexLayout](https://github.com/angular/flex-layout)
+-  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+feito com ♥ por Joédyson Bezerra :wave: [Entra em contato!](https://www.linkedin.com/in/joedyson-bezerra/)
+
+[vc]: https://code.visualstudio.com/
+[vceditconfig]: https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig
+[vceslint]: https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
