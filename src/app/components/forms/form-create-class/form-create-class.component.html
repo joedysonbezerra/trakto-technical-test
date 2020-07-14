@@ -1,0 +1,44 @@
+<form
+  class="form-create example-form"
+  [formGroup]="form"
+  (ngSubmit)="onSubmit()"
+>
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome da Turma</mat-label>
+    <input
+      matInput
+      formControlName="class"
+      placeholder="Ex. Turma 2020"
+      value=""
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Horário de inicio</mat-label>
+    <input matInput formControlName="start" placeholder="" value="" required />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Horário de fim</mat-label>
+    <input matInput formControlName="end" placeholder="" value="" required />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Faixa etária das crianças</mat-label>
+    <input
+      matInput
+      formControlName="averageAge"
+      placeholder=""
+      value=""
+      required
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Professor responsável</mat-label>
+    <mat-select formControlName="teacher">
+      <mat-option *ngFor="let teacher of teachers" [value]="teacher.value">
+        {{ teacher.viewValue }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Cadastrar</button>
+</form>

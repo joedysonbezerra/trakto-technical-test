@@ -9,9 +9,15 @@ import { ReactiveFormsModule } from "@angular/forms";
 import { MatIconModule } from "@angular/material/icon";
 import { AngularFireAuthModule } from "@angular/fire/auth";
 import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { FormCreateClassComponent } from "./form-create-class/form-create-class.component";
+import { MatSelectModule } from "@angular/material/select";
 
 @NgModule({
-  declarations: [FormSigninComponent, FormSignupComponent],
+  declarations: [
+    FormSigninComponent,
+    FormSignupComponent,
+    FormCreateClassComponent,
+  ],
   imports: [
     CommonModule,
     MatInputModule,
@@ -21,7 +27,8 @@ import { MatSnackBarModule } from "@angular/material/snack-bar";
     MatIconModule,
     AngularFireAuthModule,
     MatSnackBarModule,
+    MatSelectModule,
   ],
-  exports: [FormSigninComponent, FormSignupComponent],
+  exports: [FormSigninComponent, FormSignupComponent, FormCreateClassComponent],
 })
 export class FormModule {}
